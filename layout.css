@@ -1,0 +1,39 @@
+.hero_slider {
+  margin-top: 3em;
+  position: relative;
+}
+
+.hero_image img{
+  width: 100%;
+}
+
+.hero_label {
+  height: 10em;
+  width: 45%;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  background-color: #555;
+  opacity: .5;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.hero_label p {
+  font-size: 1.25em;
+}
+
+.project_list {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.project {
+  margin-top: 3em;
+  position: relative;
+  display: inline-block;
+}
+
+.project:last {
+  margin-left: 2em;
+}

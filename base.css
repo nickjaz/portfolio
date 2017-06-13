@@ -1,0 +1,42 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  height: 3em;
+  background: #bbb;
+}
+
+h1 {
+  float: left;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: #111;
+}
+
+.icon-menu {
+  float: right;
+}
+
+nav {
+  display: none;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.1em;
+  text-decoration: underline;
+}

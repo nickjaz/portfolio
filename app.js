@@ -1,4 +1,4 @@
-'user strict'
+'user strict;'
 
 // contructor function to add later projects
 

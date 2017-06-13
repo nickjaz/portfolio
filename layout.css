@@ -10,17 +10,19 @@
 .hero_label {
   height: 10em;
   width: 45%;
+  padding: 1em;
   position: absolute;
   top: 2em;
   left: 2em;
   background-color: #555;
   opacity: .5;
-  border-radius: 2px;
+  border-radius: .5em;
   color: #fff;
 }
 
 .hero_label p {
   font-size: 1.25em;
+  margin-top: 1em;
 }
 
 .project_list {
@@ -29,11 +31,41 @@
 }
 
 .project {
+  width: 47%;
   margin-top: 3em;
   position: relative;
   display: inline-block;
 }
 
-.project:last {
-  margin-left: 2em;
+.project img {
+  width: 100%;
+}
+
+.project_banner {
+  height: 14em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #111;
+  opacity: .5;
+}
+
+.project_banner h3 {
+  position: absolute;
+  top: 1em;
+  left: 30%;
+  font-size: 2em;
+  color: #fff;
+}
+
+.project_banner button {
+  position: absolute;
+  padding: .5em 1em;
+  top: 2.5em;
+  left: 25%;
+  font-size: 2em;
+  color: #555;
+  background: #bbb;
+  border: none;
+  border-radius: .25em;
 }

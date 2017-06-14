@@ -100,3 +100,28 @@ section div.project:last-child {
 .about p {
   margin-top: 1.5em;
 }
+
+/*layout for the project page*/
+.byline{
+  display: inline-block;
+}
+
+#project_block a {
+  display: inline-block;
+  text-decoration: underline;
+  color: blue;
+}
+
+.date {
+  font-style: italic;
+}
+
+.byline span {
+  height: 2em;
+  width: 3em;
+}
+
+.project_about {
+  height: 3em;
+  margin-left: 2em;
+}

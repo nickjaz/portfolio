@@ -6,14 +6,22 @@
   color: #fff;
 }
 
+/*will toggle a new class on and off with jquery later*/
 .menu {
-  /*display: none;*/
+  display: none;
+  position: fixed;
+  float: left;
   height: 100%;
   width: 100%;
   background: rgba(17, 17, 17, .5);
-  color: #fff;
   font-size: 4em;
-  z-index: 1000;
+  color: #fff;
+  z-index: 9999999999;
+}
+
+.menu li {
+  margin-left: .5em;
+  margin-top: .5em;
 }
 
 .hero_slider {
@@ -102,6 +110,10 @@ section div.project:last-child {
 }
 
 /*layout for the project page*/
+.template {
+  display: none;
+}
+
 .byline{
   display: inline-block;
 }

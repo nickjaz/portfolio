@@ -1,3 +1,21 @@
+.icon-menu {
+  margin-right: .25em;
+  display: inline-block;
+  float: right;
+  font-size: 3em;
+  color: #fff;
+}
+
+.menu {
+  /*display: none;*/
+  height: 100%;
+  width: 100%;
+  background: rgba(17, 17, 17, .5);
+  color: #fff;
+  font-size: 4em;
+  z-index: 1000;
+}
+
 .hero_slider {
   margin-top: 3em;
   position: relative;
@@ -10,17 +28,19 @@
 .hero_label {
   height: 10em;
   width: 45%;
+  padding: 1em;
   position: absolute;
   top: 2em;
   left: 2em;
   background-color: #555;
   opacity: .5;
-  border-radius: 2px;
+  border-radius: .5em;
   color: #fff;
 }
 
 .hero_label p {
   font-size: 1.25em;
+  margin-top: 1em;
 }
 
 .project_list {
@@ -29,11 +49,79 @@
 }
 
 .project {
+  width: 47%;
   margin-top: 3em;
   position: relative;
   display: inline-block;
 }
 
-.project:last {
+section div.project:last-child {
+  display: none;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project_banner {
+  height: 10em;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  background: #111;
+  opacity: .5;
+}
+
+.project_banner h3 {
+  margin-top: 1em;
+  font-size: 2.25em;
+  color: #fff;
+}
+
+.project_banner button {
+  padding: .25em .5em;
+  margin-top: .5em;
+  font-size: 2em;
+  color: #555;
+  background: #bbb;
+  border: none;
+  border-radius: .25em;
+}
+
+.skills {
+  display: none;
+}
+
+.about {
+  margin-top: 3em;
+}
+
+.about p {
+  margin-top: 1.5em;
+}
+
+/*layout for the project page*/
+.byline{
+  display: inline-block;
+}
+
+#project_block a {
+  display: inline-block;
+  text-decoration: underline;
+  color: blue;
+}
+
+.date {
+  font-style: italic;
+}
+
+.byline span {
+  height: 2em;
+  width: 3em;
+}
+
+.project_about {
+  height: 3em;
   margin-left: 2em;
 }

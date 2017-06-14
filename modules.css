@@ -1,0 +1,39 @@
+
+@media only screen and (min-width: 640px) {
+  .skills {
+    display: block;
+    margin-top: 3em;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  section div.project:last-child {
+    display: inline-block;
+  }
+
+  .menu {
+    display: inline;
+    float: right;
+    background: none;
+    font-size: 1em;
+    color: #111;
+  }
+
+  .menu ul {
+    float: right;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .project {
+    width: 30%;
+    margin-top: 3em;
+    position: relative;
+    display: inline-block;
+  }
+}

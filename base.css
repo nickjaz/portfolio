@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+.clearfix {
+  clear: both;
+}
+
 header {
   height: 3em;
   background: #bbb;

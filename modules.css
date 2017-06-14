@@ -13,8 +13,17 @@
     display: inline-block;
   }
 
+  nav {
+    float: right;
+  }
+
+  .skills li {
+    list-style: circle;
+  }
+
   .menu {
     display: inline;
+    position: static;
     float: right;
     background: none;
     font-size: 1em;

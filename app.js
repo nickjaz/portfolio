@@ -22,6 +22,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('.byline span.collabs').html(this.collabs);
   $newProject.find('.byline span.tools').html(this.tools);
   $newProject.find('section.project_about').html(this.about);
+  console.log($newProject);
 
   return $newProject;
 }

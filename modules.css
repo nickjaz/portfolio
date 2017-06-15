@@ -17,10 +17,6 @@
     float: right;
   }
 
-  .skills li {
-    list-style: circle;
-  }
-
   .menu {
     display: inline;
     position: static;

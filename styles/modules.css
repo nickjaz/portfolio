@@ -1,6 +1,6 @@
 
 @media only screen and (min-width: 640px) {
-  .skills {
+  #skills {
     display: block;
     margin-top: 3em;
   }
@@ -9,7 +9,7 @@
     display: none;
   }
 
-  section div.project:last-child {
+  section div.project:nth-child(3) {
     display: inline-block;
   }
 
@@ -17,21 +17,13 @@
     float: right;
   }
 
-  .skills li {
-    list-style: circle;
-  }
-
   .menu {
     display: inline;
     position: static;
     float: right;
     background: none;
-    font-size: 1em;
-    color: #111;
-  }
-
-  .menu ul {
-    float: right;
+    font-size: 1.25em;
+    color: #444;
   }
 
   .menu li {

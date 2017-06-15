@@ -8,20 +8,20 @@
 
 header {
   height: 3em;
-  background: #bbb;
+  background: #444;
+  padding: 1em;
 }
 
 h1 {
   margin-left: .5em;
   float: left;
   font-size: 2em;
-  font-family: helvetica sans-serif;
-  color: #111;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #111;
+  color: #BFB64B;
 }
 
 h4 {
@@ -34,10 +34,17 @@ h2 {
   text-decoration: underline;
 }
 
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 footer{
   margin-top: 2em;
   height: 3em;
-  background-color: #bbb;
+  padding: 1em;
+  background-color: #444;
+  color: #BFB64B;
 }
 
 footer> span {

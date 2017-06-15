@@ -1,8 +1,8 @@
 'user strict;'
-
-// contructor function to add later projects
+//global variables
 var projects = [];
 
+// contructor function to add later projects
 function Project(projectDataObj){
   this.name = projectDataObj.name;
   this.date = projectDataObj.date;
@@ -12,11 +12,12 @@ function Project(projectDataObj){
   this.gitPath = projectDataObj.gitPath;
 }
 
+//render function builds the page dynamically
 Project.prototype.toHtml = function() {
   var $newProject = $('section.template').clone();
   $newProject.removeClass('template');
 
-  $newProject.find('h1').html(this.name);
+  $newProject.find('h3').html(this.name);
   $newProject.find('.byline span.date').html(this.date);
   $newProject.find('.byline a').attr('src', this.gitPath);
   $newProject.find('.byline span.collabs').html(this.collabs);
@@ -27,10 +28,28 @@ Project.prototype.toHtml = function() {
   return $newProject;
 }
 
+//project data stored in the source_data.js file
 projectData.forEach(function(projectObj){
   projects.push(new Project(projectObj));
 });
 
 projects.forEach(function(project) {
   $('#project_block').append(project.toHtml());
+});
+
+//event handlers
+//nav events
+navHandler = function() {
+  $('.main_menu').on('click', 'li.tab', function(e) {
+    e.preventDefault();
+    $('.tab_content').hide();
+    var $tab = $(this).data('content');
+    $('#' + $tab).show();
+  });
+
+  $('.main_menu .tab:first').click();
+};
+
+$(document).ready(function() {
+  navHandler();
 });

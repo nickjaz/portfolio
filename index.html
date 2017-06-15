@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <meta name="viewpoint" content="width=device-width, initial-scale-1">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="modules.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
   </head>
 
   <body>
@@ -17,11 +17,11 @@
 
       <span class="icon-menu"></span>
 
-      <nav>
+      <nav class="main_menu">
         <ul class="menu">
-          <li><a href="#">Project</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">About</a></li>
+          <li class="tab" data-content="project"><a href="#">Projects</a></li>
+          <li><a href="https://github.com/nickjaz">GitHub</a></li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
         </ul>
       </nav>
 
@@ -41,14 +41,23 @@
         </div>
       </section>
 
-      <section class="project_list">
+      <section id="project" class="tab_content">
         <h2>Projects</h2>
 
         <div class="project">
           <img src="http://placehold.it/145x145" alt="">
 
           <div class="project_banner">
-            <h3>Project Title</h3>
+            <h3>Bus Mall</h3>
+            <button type="button" name="button">Read More</button>
+          </div>
+        </div>
+
+        <div data class="project">
+          <img src="http://placehold.it/145x145" alt="">
+
+          <div class="project_banner">
+            <h3>Salmon Cookies</h3>
             <button type="button" name="button">Read More</button>
           </div>
         </div>
@@ -57,22 +66,30 @@
           <img src="http://placehold.it/145x145" alt="">
 
           <div class="project_banner">
-            <h3>Project Title</h3>
+            <h3>About Me</h3>
             <button type="button" name="button">Read More</button>
           </div>
         </div>
 
-        <div class="project">
-          <img src="http://placehold.it/145x145" alt="">
+        <section id="project_block">
+          <section class="template">
+              <h3></h3>
 
-          <div class="project_banner">
-            <h3>Project Title</h3>
-            <button type="button" name="button">Read More</button>
-          </div>
-        </div>
+              <div class="byline">
+                <a class="icon-github" href=""></a>
+
+                <span class="date"></span>
+
+                <div>Collaborators:<span class="collabs"></span></div>
+
+                <div>Languages:<span class="tools"></span></div>
+              </div>
+            <section class="project_about"></section>
+          </section>
+        </section>
       </section>
 
-      <section class="skills">
+      <section id="skills" class="tab_content">
         <h2>Skills</h2>
 
         <ul>
@@ -87,21 +104,10 @@
         </ul>
       </section>
 
-      <section class="about">
+      <section id="about" class="tab_content">
         <h2>About</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-
-      <section id="project_page">
-        <section class="template">
-          <header>
-            <h3></h3>
-            <div class="">
-
-            </div>
-          </header>
-        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
 
     </main>
@@ -110,11 +116,15 @@
       <span>&copy; firstlast.com</span>
 
       <div>
-        <span class="icon-linkedin"></span>
+        <a href="https://github.com/nickjaz"><span class="icon-linkedin"></span></a>
 
-        <span class="icon-github"></span>
+        <a href="https://www.linkedin.com/in/nick-asmussen-9a50ab52/"><span class="icon-github"></span></a>
       </div>
     </footer>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/source_data.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 
 </html>

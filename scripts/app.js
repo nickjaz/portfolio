@@ -14,8 +14,7 @@ function Project(projectDataObj){
 
 //render function builds the page dynamically
 Project.prototype.toHtml = function() {
-  var $newProject = $('section.template').clone();
-  $newProject.removeClass('template');
+  var $newProject = $('project_template').clone();
 
   $newProject.find('h3').html(this.name);
   $newProject.find('.byline span.date').html(this.date);
@@ -34,7 +33,7 @@ projectData.forEach(function(projectObj){
 });
 
 projects.forEach(function(project) {
-  $('#project_block').append(project.toHtml());
+  $('#projects').append(project.toHtml());
 });
 
 //event handlers

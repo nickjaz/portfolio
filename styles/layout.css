@@ -64,7 +64,7 @@
   margin-top: 2em;
 }
 
-.project {
+.sub_project {
   width: 47%;
   margin-top: 3em;
   position: relative;
@@ -75,7 +75,7 @@ section div.project:nth-child(3) {
   display: none;
 }
 
-.project img {
+.sub_project img {
   width: 100%;
 }
 

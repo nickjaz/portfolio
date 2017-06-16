@@ -128,7 +128,7 @@ section div.sub_project:nth-child(3) {
   font-style: italic;
 }
 
-.byline > * {
+.sub_project_info > * > * {
   margin-top: 1vw;
 }
 

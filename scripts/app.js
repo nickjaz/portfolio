@@ -41,5 +41,4 @@ var navHandler = function() {
   });
 };
 
-
 navHandler();

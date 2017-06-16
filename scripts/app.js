@@ -39,16 +39,16 @@ projects.forEach(function(project) {
 
 //event handlers
 //nav events
-navHandler = function() {
+var navHandler = function() {
   $('.main_menu').on('click', 'li.tab', function(e) {
     e.preventDefault();
     $('.tab_content').hide();
     var $tab = $(this).data('content');
     $('#' + $tab).show();
   });
-
-  $('.main_menu .tab:first').click();
 };
+
+
 
 $(document).ready(function() {
   navHandler();

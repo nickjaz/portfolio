@@ -6,9 +6,26 @@
     <meta name="viewpoint" content="width=device-width, initial-scale-1">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <script id="project_template" type="text/x-handlebars-template">
+      <section class="sub_project_info">
+          <h3>{{name}}</h3>
+
+          <div class="byline">
+            <a class="icon-github" href={{gitPath}}></a>
+
+            <span>{{date}}</span>
+
+            <div>Collaborators: {{collabs}}</div>
+
+            <div>Languages: {{tools}}</div>
+          </div>
+          <section class="sub_project_about">{{{about}}}</section>
+      </section>
+    </script>
   </head>
 
   <body>
@@ -34,7 +51,7 @@
           <img src="http://placehold.it/300x200" alt="hero image">
 
           <div class="hero_label">
-            <h4>Title of Code Screenshot</h4>
+            <h3>Title of Code Screenshot</h3>
 
             <p>Short descirption of code screenshot. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum.</p>
           </div>
@@ -44,7 +61,7 @@
       <section id="project" class="tab_content">
         <h2>Projects</h2>
 
-        <div class="project">
+        <div class="sub_project">
           <img src="http://placehold.it/145x145" alt="">
 
           <div class="project_banner">
@@ -53,7 +70,7 @@
           </div>
         </div>
 
-        <div data class="project">
+        <div data class="sub_project">
           <img src="http://placehold.it/145x145" alt="">
 
           <div class="project_banner">
@@ -62,7 +79,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="sub_project">
           <img src="http://placehold.it/145x145" alt="">
 
           <div class="project_banner">
@@ -70,23 +87,6 @@
             <button type="button" name="button">Read More</button>
           </div>
         </div>
-
-        <section id="project_block">
-          <section class="template">
-              <h3></h3>
-
-              <div class="byline">
-                <a class="icon-github" href=""></a>
-
-                <span class="date"></span>
-
-                <div>Collaborators:<span class="collabs"></span></div>
-
-                <div>Languages:<span class="tools"></span></div>
-              </div>
-            <section class="project_about"></section>
-          </section>
-        </section>
       </section>
 
       <section id="skills" class="tab_content">
@@ -123,6 +123,7 @@
     </footer>
 
     <script src="scripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script src="scripts/source_data.js"></script>
     <script src="scripts/app.js"></script>
   </body>

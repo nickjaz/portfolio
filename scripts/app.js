@@ -14,17 +14,11 @@ function Project(projectDataObj){
 
 //render function builds the page dynamically
 Project.prototype.toHtml = function() {
-  var $newProject = $('project_template').clone();
+  var template = $('#project_template').html();
 
-  $newProject.find('h3').html(this.name);
-  $newProject.find('.byline span.date').html(this.date);
-  $newProject.find('.byline a').attr('src', this.gitPath);
-  $newProject.find('.byline span.collabs').html(this.collabs);
-  $newProject.find('.byline span.tools').html(this.tools);
-  $newProject.find('section.project_about').html(this.about);
-  console.log($newProject);
+  var templateRender = Handlebars.compile(template);
 
-  return $newProject;
+  return templateRender(this);
 }
 
 //project data stored in the source_data.js file
@@ -32,8 +26,8 @@ projectData.forEach(function(projectObj){
   projects.push(new Project(projectObj));
 });
 
-projects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
+projects.forEach(function(p) {
+  $('#project').append(p.toHtml());
 });
 
 //event handlers
@@ -48,7 +42,4 @@ var navHandler = function() {
 };
 
 
-
-$(document).ready(function() {
-  navHandler();
-});
+navHandler();

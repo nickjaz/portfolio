@@ -71,7 +71,7 @@
   display: inline-block;
 }
 
-section div.project:nth-child(3) {
+section div.sub_project:nth-child(3) {
   display: none;
 }
 
@@ -91,7 +91,6 @@ section div.project:nth-child(3) {
 
 .project_banner h3 {
   margin-top: 2em;
-  font-size: 1.5em;
   color: #fff;
 }
 
@@ -120,14 +119,6 @@ section div.project:nth-child(3) {
 }
 
 /*dynamically built from source data for the project block*/
-.template {
-  display: none;
-}
-
-#project_block {
-  margin-left: 1em;
-  margin-top: 1.5em;
-}
 
 .byline{
   display: inline-block;

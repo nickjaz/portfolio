@@ -3,7 +3,7 @@
 var projectData = [
   {
     name:     'BusMall',
-    date:     '05-24-2017',
+    date:     '2017-05-24',
     collabs:  'Andy Martin',
     tools:    'HTML, CSS, JavaScript',
     about:    '<p>Choose between 3 products and display results for products clicked.</p>',
@@ -12,7 +12,7 @@ var projectData = [
 
   {
     name:     'Salmon Cookies',
-    date:     '05-17-2017',
+    date:     '2017-05-17',
     collabs:  'Andy Martin',
     tools:    'HTML, CSS, JavaScript',
     about:    '<p>Sales tracking for a local business.</p>',
@@ -21,7 +21,7 @@ var projectData = [
 
   {
     name:     'About Me',
-    date:     '05-10-2017',
+    date:     '2017-05-10',
     collabs:  'none',
     tools:    'HTML, CSS',
     about:    '<p>Beginner about me page as an introduction to web design.</p>',

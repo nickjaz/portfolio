@@ -9,7 +9,7 @@
     display: none;
   }
 
-  section div.project:nth-child(3) {
+  section div.sub_project:nth-child(3) {
     display: inline-block;
   }
 
@@ -31,7 +31,7 @@
     margin-right: 1em;
   }
 
-  .project {
+  .sub_project {
     width: 30%;
     margin-top: 3em;
     position: relative;

@@ -15,7 +15,7 @@ header {
 h1 {
   margin-left: .5em;
   float: left;
-  font-size: 2em;
+  font-size: 4.5vw;
   color: #fff;
 }
 
@@ -24,18 +24,14 @@ a {
   color: #BFB64B;
 }
 
-h4 {
-  font-size: 1.5em;
-}
-
 h2 {
   margin-left: .5em;
-  font-size: 1.5em;
+  font-size: 3.5vw;
   text-decoration: underline;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 3vw;
   font-weight: bold;
 }
 

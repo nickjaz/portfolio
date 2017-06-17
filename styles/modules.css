@@ -16,7 +16,7 @@
     float: right;
   }
 
-  .menu {
+  #menu {
     display: inline;
     position: static;
     float: right;
@@ -25,7 +25,7 @@
     color: #444;
   }
 
-  .menu li {
+  #menu li {
     display: inline-block;
     margin-right: 1em;
   }

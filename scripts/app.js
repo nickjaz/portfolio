@@ -41,4 +41,23 @@ var navHandler = function() {
   });
 };
 
+$('#menu').hide();
+$('.icon-cross').hide();
+
+$('.icon-menu').on('click', function() {
+  $('#menu').slideToggle('slow', function(){
+    $('.icon-menu').hide();
+    $('.icon-cross').show();
+  });
+});
+
+$('.icon-cross').on('click', function() {
+  $('#menu').slideToggle('slow', function() {
+    $('.icon-menu').show();
+    $('.icon-cross').hide();
+  });
+});
+
+
+
 navHandler();

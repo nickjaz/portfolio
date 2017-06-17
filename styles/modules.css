@@ -16,23 +16,24 @@
     float: right;
   }
 
-  .menu {
+  #menu {
     display: inline;
     position: static;
     float: right;
     background: none;
-    font-size: 1.25em;
+    font-size: 3vw;
     color: #444;
   }
 
-  .menu li {
+  #menu li {
     display: inline-block;
-    margin-right: 1em;
+    margin-top: 3.5vw;
+    padding: 1vw;
   }
 
   .sub_project {
     width: 30%;
-    margin-top: 3em;
+    margin-top: 3vw;
     position: relative;
     display: inline-block;
   }

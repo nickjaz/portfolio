@@ -33,7 +33,7 @@ projects.forEach(function(p) {
 //event handlers
 //nav events
 var navHandler = function() {
-  $('.main_menu').on('click', 'li.tab', function(e) {
+  $('#menu').on('click', 'li.tab', function(e) {
     e.preventDefault();
     $('.tab_content').hide();
     var $tab = $(this).data('content');
@@ -41,4 +41,22 @@ var navHandler = function() {
   });
 };
 
+var menuHandler = function() {
+  $('.icon-cross').hide();
+
+  $('.icon-menu').on('click', function() {
+      $('#menu').removeClass('menu_hide').addClass('menu_show');
+      $('.icon-menu').hide();
+      $('.icon-cross').show();
+  });
+
+  $('.icon-cross').on('click', function() {
+      $('#menu').removeClass('menu_show').addClass('menu_hide');
+      $('.icon-menu').show();
+      $('.icon-cross').hide();
+  });
+}
+
+
 navHandler();
+menuHandler();

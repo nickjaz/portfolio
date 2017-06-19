@@ -13,11 +13,11 @@ header {
 
 h1 {
   margin-left: 4vw;
-  margin-top: 2vw;
+  margin-top: 5vw;
   float: left;
-  font-family: 'Alegreya Sans SC';
-  font-size: 6vw;
-  color: #fff;
+  font-family: 'Monoton', cursive;
+  font-size: 5vw;
+  color: #fff;;
 }
 
 a {
@@ -27,8 +27,7 @@ a {
 
 h2 {
   margin-left: 3vw;
-  font-size: 5vw;
-  font-family: 'Alegreya Sans SC';
+  font-size: 6vw;
 }
 
 h3 {

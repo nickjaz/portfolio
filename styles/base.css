@@ -26,12 +26,13 @@ a {
 }
 
 h2 {
-  margin-left: 3vw;
   font-size: 6vw;
+  font-family: 'Anton';
+  color: #444;
 }
 
 h3 {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 

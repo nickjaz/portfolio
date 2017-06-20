@@ -52,6 +52,7 @@ var initPage = function() {
  });
  navHandler();
  menuHandler();
+ bannerHandler();
 }
 
 //event handlers
@@ -78,4 +79,15 @@ var menuHandler = function() {
       $('.icon-menu').show();
       $('.icon-cross').hide();
   });
+}
+
+var bannerHandler = function() {
+  var $info = $('.info');
+  $info.hide();
+  $('.project_banner').on('click', $info, function() {
+    $info.fadeIn();
+    $('.project_banner').mouseleave(function(){
+      $info.fadeOut('slow');
+    })
+  })
 }

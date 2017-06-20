@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project_template" type="text/x-handlebars-template">
-      <section class="sub_project_info">
+      <section class="sub_project">
+          <img src={{image}}>
           <h3>{{name}}</h3>
 
-          <div class="byline">
+          <div class="project_banner">
+            <h4>{{name}}</h4>
             <a class="icon-github" href={{gitPath}}></a>
 
             <span>{{date}}</span>
@@ -23,8 +25,9 @@
             <div>Collaborators: {{collabs}}</div>
 
             <div>Languages: {{tools}}</div>
+
+            <section class="sub_project_about">{{{about}}}</section>
           </div>
-          <section class="sub_project_about">{{{about}}}</section>
       </section>
     </script>
   </head>
@@ -32,9 +35,7 @@
   <body>
     <header>
       <h1>Nick Asmussen</h1>
-
-
-
+      
       <nav>
         <span class="icon-menu"></span>
 
@@ -66,30 +67,6 @@
 
       <section id="project" class="tab_content">
         <h2>*PROJECTS*</h2>
-
-        <div class="sub_project">
-          <img src="assets/images/Bus-mall.png" alt="">
-
-          <div class="project_banner">
-            <h3>Bus Mall</h3>
-          </div>
-        </div>
-
-        <div data class="sub_project">
-          <img src="assets/images/Salmon-cookies.png" alt="">
-
-          <div class="project_banner">
-            <h3>Salmon Cookies</h3>
-          </div>
-        </div>
-
-        <div class="sub_project">
-          <img src="assets/images/Tweet-fighter.png" alt="">
-
-          <div class="project_banner">
-            <h3>Tweet Fighter</h3>
-          </div>
-        </div>
       </section>
 
       <section id="skills" class="tab_content">
@@ -100,10 +77,8 @@
           <li>jQuery</li>
           <li>CSS</li>
           <li>HTML</li>
-          <li>SQL</li>
           <li>RWD</li>
           <li>AJAX</li>
-          <li>SPA</li>
         </ul>
       </section>
 

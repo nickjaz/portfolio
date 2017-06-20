@@ -10,6 +10,7 @@ function Project(projectDataObj){
   this.tools = projectDataObj.tools;
   this.about = projectDataObj.about;
   this.gitPath = projectDataObj.gitPath;
+  this.image = projectDataObj.image;
 }
 
 //render function builds the page dynamically

@@ -44,11 +44,3 @@
     display: inline-block;
   }
 }
-
-.project_banner:hover {
-  opacity: 0;
-}
-
-.sub_project:hover {
-  border: solid 2px #444;
-}

@@ -1,6 +1,5 @@
 'user strict;'
 //global variables
-var projects = [];
 
 // contructor function to add later projects
 function Project(projectDataObj){
@@ -13,6 +12,8 @@ function Project(projectDataObj){
   this.image = projectDataObj.image;
 }
 
+Project.all = [];
+
 //render function builds the page dynamically
 Project.prototype.toHtml = function() {
   var template = $('#project_template').html();
@@ -23,16 +24,37 @@ Project.prototype.toHtml = function() {
 }
 
 //project data stored in the source_data.js file
-projectData.forEach(function(projectObj){
-  projects.push(new Project(projectObj));
-});
+Project.loadAll = function(rawData) {
+  rawData.forEach(function(projectObj){
+    Project.all.push(new Project(projectObj));
+  })
+}
 
-projects.forEach(function(p) {
-  $('#project').append(p.toHtml());
-});
+Project.fetchAll = function() {
+  if(localStorage.rawData) {
+    Project.loadAll(JSON.parse(localStorage.rawData));
+    initPage();
+  } else {
+    $.getJSON('/scripts/source_data.json')
+    .then(function(data){
+      localStorage.rawData = JSON.stringify(data)
+      Project.loadAll(JSON.parse(data));
+      initPage();
+    }, function(err){
+      console.error('My page broke because:', err);
+    })
+  }
+}
+
+var initPage = function() {
+ Project.all.forEach(function(project) {
+   $('#project').append(project.toHtml());
+ });
+ navHandler();
+ menuHandler();
+}
 
 //event handlers
-//nav events
 var navHandler = function() {
   $('#menu').on('click', 'li.tab', function(e) {
     e.preventDefault();
@@ -40,7 +62,7 @@ var navHandler = function() {
     var $tab = $(this).data('content');
     $('#' + $tab).show();
   });
-};
+}
 
 var menuHandler = function() {
   $('.icon-cross').hide();
@@ -57,7 +79,3 @@ var menuHandler = function() {
       $('.icon-cross').hide();
   });
 }
-
-
-navHandler();
-menuHandler();

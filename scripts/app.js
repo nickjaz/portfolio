@@ -83,11 +83,14 @@ var menuHandler = function() {
 
 var bannerHandler = function() {
   var $info = $('.info');
+  var $header = $('.project_banner').find('h3');
   $info.hide();
   $('.project_banner').on('click', $info, function() {
     $info.fadeIn();
+    $header.addClass('click');
     $('.project_banner').mouseleave(function(){
-      $info.fadeOut('slow');
+      $info.fadeOut();
+      $header.removeClass('click');
     })
   })
 }

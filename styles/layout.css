@@ -74,7 +74,6 @@
 
 .tab_content {
   box-sizing: border-box;
-  text-align: center;
 }
 
 #project {
@@ -104,20 +103,26 @@
   width: 100%;
   position: absolute;
   top: 0;
-  text-align: center;
-  background: rgba(17, 17, 17, .1);
+  background: rgba(17, 17, 17, .25);
   color: #fff;
 }
 
 .project_banner h3 {
   margin-top: 20vw;
   color: #fff;
+  transition: 350ms;
+}
+
+.click {
+  display: inline;
+
 }
 
 .info a {
-  font-size: 3vw;
+  font-size: 8vw;
   color: #BFB64B;
-  margin-right: 2vw;
+  background: #444;
+  border-radius: 50%;
 }
 
 .info span {

@@ -1,5 +1,6 @@
 body {
   font-family: helvetica;
+  background: url('/assets/images/wooden-white.jpg') no-repeat center fixed;
 }
 
 .clearfix {
@@ -13,11 +14,11 @@ header {
 
 h1 {
   margin-left: 4vw;
-  margin-top: 2vw;
+  margin-top: 5vw;
   float: left;
-  font-family: 'Alegreya Sans SC';
-  font-size: 6vw;
-  color: #fff;
+  font-family: 'Monoton', cursive;
+  font-size: 5vw;
+  color: #fff;;
 }
 
 a {
@@ -26,14 +27,18 @@ a {
 }
 
 h2 {
-  margin-left: 3vw;
-  font-size: 5vw;
-  font-family: 'Alegreya Sans SC';
+  font-size: 6vw;
+  font-family: 'Anton';
+  color: #444;
 }
 
 h3 {
   font-size: 4vw;
   font-weight: bold;
+}
+
+h4 {
+  font-size: 2vw;
 }
 
 footer{

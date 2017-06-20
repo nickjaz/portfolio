@@ -1,5 +1,5 @@
 .icon-menu {
-  margin-right: 4vw;
+  margin-right: 2vw;
   margin-top: 1vw;
   float: right;
   font-size: 8vw;
@@ -7,8 +7,8 @@
 }
 
 .icon-cross {
-  margin-right: 5vw;
-  margin-top: 3vw;
+  margin-right: 3vw;
+  margin-top: 2vw;
   float: right;
   font-size: 6vw;
   color: #BFB64B;
@@ -30,15 +30,15 @@
   height: 100%;
   width: 100%;
   background: rgba(17, 17, 17, .75);
-  font-size: 10vw;
-  color: #fff;
+  font-size: 14vw;
+  text-align: center;
   z-index: 9999999999;
 }
 
 #menu li {
-  margin-bottom: 6vw;
-  margin-left: 2vw;
-  padding: 2vw;
+  height: 15vw;
+  margin: 15vw 0;
+  text-align: center;
 }
 
 .spacer {
@@ -74,6 +74,7 @@
 
 .tab_content {
   box-sizing: border-box;
+  text-align: center;
 }
 
 #project {
@@ -83,35 +84,52 @@
 
 .sub_project {
   width: 100%;
-  height: 44vw;
+  height: 50vw;
+  margin-top: 4vw;
   position: relative;
   display: inline-block;
-  border: solid 1px #fff;
+  border-top: solid 1vw #444;
+  border-bottom: solid 1vw #444;
 }
 
 .sub_project img {
   width: 100%;
-  height: 44vw;
+  height: 50vw;
+}
+
+.sub_project h3 {
+  margin-top: 4vw;
+}
+
+.project_banner {
+  display: none;
 }
 
 .project_banner {
   height: 100%;
   width: 100%;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   background: rgba(17, 17, 17, .5);
 }
 
-.project_banner:hover {
-  background: none;
-  color: none;
+.project_banner {
+  margin-top: 20vw;
+  letter-spacing: 2vw;
+  color: #fff;
 }
 
-.project_banner h3 {
-  margin-top: 18vw;
-  font-size: 8vw;
-  color: #fff;
+.project_banner a {
+  font-size: 3vw;
+  color: #BFB64B;
+  margin-right: 2vw;
+}
+
+.project_banner span {
+  font-style: italic;
+}
+
+.project_banner > * > * {
+  margin-top: 1vw;
 }
 
 #skills {
@@ -121,27 +139,4 @@
 #about p {
   padding: 2vw;
   font-size: 3vw;
-}
-
-/*dynamically built from source data for the project template*/
-.sub_project_info {
-  margin-top: 4vw;
-}
-
-.byline a {
-  font-size: 3vw;
-  color: #BFB64B;
-  margin-right: 2vw;
-}
-
-.byline span {
-  font-style: italic;
-}
-
-.sub_project_info > * > * {
-  margin-top: 1vw;
-}
-
-.sub_project_info:last-child {
-  margin-bottom: 3vw;
 }

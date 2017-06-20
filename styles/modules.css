@@ -20,6 +20,7 @@
     display: inline;
     position: static;
     float: right;
+    margin-right: 2vw;
     background: none;
     font-size: 3vw;
     color: #444;
@@ -27,8 +28,13 @@
 
   #menu li {
     display: inline-block;
-    margin-top: 3.5vw;
+    margin-top: 6vw;
+    margin-bottom: 0;
     padding: 1vw;
+  }
+
+  a:hover {
+    color: #fff;
   }
 
   .sub_project {

@@ -6,15 +6,18 @@
     <meta name="viewpoint" content="width=device-width, initial-scale-1">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project_template" type="text/x-handlebars-template">
-      <section class="sub_project_info">
+      <section class="sub_project">
+          <img src={{image}}>
           <h3>{{name}}</h3>
 
-          <div class="byline">
+          <div class="project_banner">
+            <h4>{{name}}</h4>
             <a class="icon-github" href={{gitPath}}></a>
 
             <span>{{date}}</span>
@@ -22,8 +25,9 @@
             <div>Collaborators: {{collabs}}</div>
 
             <div>Languages: {{tools}}</div>
+
+            <section class="sub_project_about">{{{about}}}</section>
           </div>
-          <section class="sub_project_about">{{{about}}}</section>
       </section>
     </script>
   </head>
@@ -31,9 +35,7 @@
   <body>
     <header>
       <h1>Nick Asmussen</h1>
-
-
-
+      
       <nav>
         <span class="icon-menu"></span>
 
@@ -64,50 +66,24 @@
       <div class="spacer"></div>
 
       <section id="project" class="tab_content">
-        <h2>Projects</h2>
-
-        <div class="sub_project">
-          <img src="assets/images/Bus-mall.png" alt="">
-
-          <div class="project_banner">
-            <h3>Bus Mall</h3>
-          </div>
-        </div>
-
-        <div data class="sub_project">
-          <img src="assets/images/Salmon-cookies.png" alt="">
-
-          <div class="project_banner">
-            <h3>Salmon Cookies</h3>
-          </div>
-        </div>
-
-        <div class="sub_project">
-          <img src="assets/images/Tweet-fighter.png" alt="">
-
-          <div class="project_banner">
-            <h3>Tweet Fighter</h3>
-          </div>
-        </div>
+        <h2>*PROJECTS*</h2>
       </section>
 
       <section id="skills" class="tab_content">
-        <h2>Skills</h2>
+        <h2>*SKILLS*</h2>
 
         <ul>
           <li>JavaScript</li>
           <li>jQuery</li>
           <li>CSS</li>
           <li>HTML</li>
-          <li>SQL</li>
           <li>RWD</li>
           <li>AJAX</li>
-          <li>SPA</li>
         </ul>
       </section>
 
       <section id="about" class="tab_content">
-        <h2>About</h2>
+        <h2>*ABOUT*</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>

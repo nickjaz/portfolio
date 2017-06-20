@@ -38,9 +38,14 @@
   }
 
   .sub_project {
-    width: 30%;
+    width: 49%;
+    height: 30vw;
     margin-top: 3vw;
     position: relative;
     display: inline-block;
+  }
+
+  .sub_project img {
+    height: 30vw;
   }
 }

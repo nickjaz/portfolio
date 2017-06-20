@@ -14,19 +14,21 @@
     <script id="project_template" type="text/x-handlebars-template">
       <section class="sub_project">
           <img src={{image}}>
-          <h3>{{name}}</h3>
+
 
           <div class="project_banner">
-            <h4>{{name}}</h4>
-            <a class="icon-github" href={{gitPath}}></a>
+            <h3>{{name}}</h3>
+            <div class="info">
+              <a class="icon-github" href={{gitPath}}></a>
 
-            <span>{{date}}</span>
+              <span>{{date}}</span>
 
-            <div>Collaborators: {{collabs}}</div>
+              <div>Collaborators: {{collabs}}</div>
 
-            <div>Languages: {{tools}}</div>
+              <div>Languages: {{tools}}</div>
 
-            <section class="sub_project_about">{{{about}}}</section>
+              <section class="sub_project_about">{{{about}}}</section>
+            </div>
           </div>
       </section>
     </script>

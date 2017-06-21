@@ -103,6 +103,7 @@
   width: 100%;
   position: absolute;
   top: 0;
+  text-align: center;
   background: rgba(17, 17, 17, .25);
   color: #fff;
 }
@@ -115,7 +116,10 @@
 
 .click {
   display: inline;
+}
 
+.info {
+  text-align: none;
 }
 
 .info a {

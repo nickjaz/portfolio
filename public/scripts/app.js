@@ -62,6 +62,9 @@ var navHandler = function() {
     $('.tab_content').hide();
     var $tab = $(this).data('content');
     $('#' + $tab).show();
+    $('#menu').removeClass('menu_show').addClass('menu_hide');
+    $('.icon-menu').show();
+    $('.icon-cross').hide();
   });
 };
 
@@ -82,15 +85,13 @@ var menuHandler = function() {
 };
 
 var bannerHandler = function() {
-  var $info = $('.info');
-  var $header = $('.project_banner').find('h3');
-  $info.hide();
-  $('.project_banner').on('click', $info, function() {
-    $info.fadeIn();
-    $header.addClass('click');
+  $('.info').hide();
+  $('.project_banner').on('click', function() {
+    $(this).find('.info').fadeIn();
+    $(this).find('h3').addClass('click');
     $('.project_banner').mouseleave(function(){
-      $info.fadeOut();
-      $header.removeClass('click');
+      $(this).find('.info').fadeOut();
+      $(this).find('h3').removeClass('click');
     });
   });
 };

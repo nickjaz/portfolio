@@ -115,18 +115,22 @@
 }
 
 .click {
-  display: inline;
+  display: inline-block;
+  text-decoration: underline;
+  margin-top: 8vw !important;
 }
 
 .info {
-  text-align: none;
+  margin-left: 4vw;
+  font-size: 4vw;
+  text-align: left;
 }
 
 .info a {
-  font-size: 8vw;
+  font-size: 6vw;
   color: #BFB64B;
   background: #444;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .info span {
@@ -134,7 +138,7 @@
 }
 
 .info > * > * {
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 
 #skills {

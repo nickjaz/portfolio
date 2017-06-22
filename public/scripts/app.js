@@ -38,7 +38,7 @@ Project.fetchAll = function() {
     $.getJSON('/scripts/source_data.json')
     .then(function(data){
       localStorage.projData = JSON.stringify(data);
-      Project.loadAll(JSON.parse(data));
+      Project.loadAll(data);
       initPage();
     }, function(err){
       console.error('My page broke because:', err);

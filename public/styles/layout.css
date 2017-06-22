@@ -3,7 +3,7 @@
   margin-top: 1vw;
   float: right;
   font-size: 8vw;
-  color: #BFB64B;
+  color: #fff;
 }
 
 .icon-cross {
@@ -11,7 +11,8 @@
   margin-top: 2vw;
   float: right;
   font-size: 6vw;
-  color: #BFB64B;
+  /*color: #BFB64B;*/
+  color: #fff;
   z-index: 99999999999999;
 }
 
@@ -42,9 +43,9 @@
 }
 
 .spacer {
-  margin-top: 6vw;
+  margin-top: 8vw;
   height: 1vw;
-  background: #BFB64B;
+  background: url('/assets/images/colors.jpg') center;
 }
 
 .hero_slider {
@@ -63,7 +64,7 @@
   position: absolute;
   top: 6vw;
   left: 6vw;
-  background-color: #444;
+  background-color: rgba(17, 17, 17, .5);
   border-radius: 1vw;
   color: #fff;
 }
@@ -78,7 +79,7 @@
 
 #project {
   width: 100%;
-  margin-top: 3vw;
+  margin-top: 4vw;
 }
 
 .sub_project {
@@ -86,11 +87,6 @@
   height: 50vw;
   position: relative;
   display: inline-block;
-  border-top: solid 1vw #444;
-}
-
-.sub_project:last-child {
-  border-bottom: solid 1vw #444;
 }
 
 .sub_project img {
@@ -128,8 +124,8 @@
 
 .info a {
   font-size: 6vw;
-  color: #BFB64B;
-  background: #444;
+  color: #fff;
+  background: url('/assets/images/colors.jpg') center;
   border-radius: 100%;
 }
 
@@ -146,6 +142,7 @@
 }
 
 #about p {
-  padding: 2vw;
+  padding: 1vw;
   font-size: 3vw;
+  color: #fff;
 }

@@ -31,13 +31,13 @@ Project.loadAll = function(rawData) {
 };
 
 Project.fetchAll = function() {
-  if(localStorage.rawData) {
-    Project.loadAll(JSON.parse(localStorage.rawData));
+  if(localStorage.projData) {
+    Project.loadAll(JSON.parse(localStorage.projData));
     initPage();
   } else {
     $.getJSON('/scripts/source_data.json')
     .then(function(data){
-      localStorage.rawData = JSON.stringify(data);
+      localStorage.projData = JSON.stringify(data);
       Project.loadAll(JSON.parse(data));
       initPage();
     }, function(err){

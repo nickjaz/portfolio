@@ -1,6 +1,6 @@
 body {
   font-family: helvetica;
-  background: url('/assets/images/wooden-white.jpg') no-repeat center fixed;
+  background: url('/assets/images/colors.jpg') no-repeat center fixed;
 }
 
 .clearfix {
@@ -18,18 +18,21 @@ h1 {
   float: left;
   font-family: 'Monoton', cursive;
   font-size: 5vw;
-  color: #fff;;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #BFB64B;
+  color: #fff;
 }
 
 h2 {
+  margin: 4vw 0;
   font-size: 6vw;
   font-family: 'Anton';
-  color: #444;
+  color: #fff;
+  text-align: center;
+  background: rgba(1, 1, 1, .5);
 }
 
 h3 {
@@ -43,14 +46,14 @@ h4 {
 
 footer{
   margin-top: 4vw;
-  height: 8vw;
+  height: 4vw;
   padding: 2vw;
-  background-color: #444;
-  color: #BFB64B;
+  background: #444;
+  color: #fff;
 }
 
 footer> span {
-  margin-top: 8vw;
+  margin-top: 6vw;
   font-size: 3vw;
 }
 

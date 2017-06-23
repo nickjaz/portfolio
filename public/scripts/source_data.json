@@ -19,11 +19,20 @@
   },
   {
     "name":    "Tweet Fighter",
-    "date":     "2017-05-10",
+    "date":     "2017-05-31",
     "collabs":  "David Kosmos, Michelle Scharlock, Fred Rapp",
+    "tools":    "HTML, CSS, JS",
+    "about":    "<p>Equating the champion of a twitter war by comparing likes and retweets.</p>",
+    "gitPath":  "https://github.com/nickjaz/tweet_fighter",
+    "image":    "assets/images/Tweet-fighter.png"
+  },
+  {
+    "name":     "About Me",
+    "date":     "2017-10-17",
+    "collabs":  "None",
     "tools":    "HTML, CSS",
     "about":    "<p>Beginner about me page as an introduction to web design.</p>",
-    "gitPath":  "https://github.com/nickjaz/about_me",
-    "image":    "assets/images/Tweet-fighter.png"
+    "gitPath":  "https://github.com/nickjaz/about_me_guessing_game",
+    "image":    "assets/images/About-me.png"
   }
 ]

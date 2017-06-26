@@ -6,8 +6,7 @@
     <meta name="viewpoint" content="width=device-width, initial-scale-1">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="assets/icomoon/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|NTR" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
@@ -74,14 +73,18 @@
       <section id="skills" class="tab_content">
         <h2>SKILLS</h2>
 
-        <ul>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>RWD</li>
-          <li>AJAX</li>
-        </ul>
+        <div class="skill_box">
+          <span class="icon-html-five"></span>
+        </div>
+        <div class="skill_box">
+          <span class="icon-css3"></span>
+        </div>
+        <div class="skill_box">
+          <!-- <img src="./assets/images/js-icon.png" alt=""> -->
+        </div>
+        <div class="skill_box">
+          <!-- <img src="./assets/images/nodejs.png" alt=""> -->
+        </div>
       </section>
 
       <section id="about" class="tab_content">
@@ -109,7 +112,7 @@
     <script src="scripts/source_data.json"></script>
     <script src="scripts/app.js"></script>
     <script>
-      Project.fetchAll()
+      app.Project.fetchAll();
     </script>
   </body>
 

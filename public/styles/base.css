@@ -1,5 +1,5 @@
 body {
-  font-family: helvetica;
+  font-family: 'NTR';
   background: url('/assets/images/colors.jpg') no-repeat center fixed;
 }
 
@@ -16,7 +16,7 @@ h1 {
   margin-left: 4vw;
   margin-top: 5vw;
   float: left;
-  font-family: 'Monoton', cursive;
+  font-family: 'Bungee';
   font-size: 5vw;
   color: #fff;
 }
@@ -28,11 +28,12 @@ a {
 
 h2 {
   margin: 4vw 0;
+  padding: 1vw;
   font-size: 6vw;
-  font-family: 'Anton';
+  font-family: 'Bungee';
   color: #fff;
   text-align: center;
-  background: rgba(1, 1, 1, .5);
+  background: rgba(1, 1, 1, .75);
 }
 
 h3 {

@@ -50,6 +50,13 @@ let app = {};
     }
   };
 
+  Project.getCollabs = () => {
+    Project.all.map((project) => project.collabs.split(', ')).reduce((count, collabs) => {
+      return count.includes(collabs) ? null : count.push(collabs);
+    }, []);
+
+  };
+
   var initPage = function() {
     Project.all.forEach(function(project) {
       $('#project').append(project.toHtml());
@@ -99,5 +106,5 @@ let app = {};
       });
     });
   };
-  module.app = app;
+  module.Project = Project;
 }(app));

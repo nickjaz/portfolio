@@ -141,6 +141,15 @@
   display: none;
 }
 
+.skill_box {
+  width: 24%;
+  height: 10vw;
+  display: inline;
+  text-align: center;
+  background: #444;
+  color: white;
+}
+
 #about p {
   margin: 2vw;
   padding: 2vw;

@@ -5,7 +5,7 @@
     <title>Portfolio</title>
     <meta name="viewpoint" content="width=device-width, initial-scale-1">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="assets/icomoon/style.css">
+    <link rel="stylesheet" href="vendor/icomoon/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|NTR" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -42,9 +42,9 @@
 
         <ul id="menu" class="menu_hide">
           <span class="icon-cross"></span>
-          <li class="tab" data-content="project"><a href="#">Projects</a></li>
+          <li class="tab" data-content="project"><a href="/projects">Projects</a></li>
           <li><a href="https://github.com/nickjaz">GitHub</a></li>
-          <li class="tab" data-content="about"><a href="#">About</a></li>
+          <li class="tab" data-content="about"><a href="/about">About</a></li>
         </ul>
       </nav>
 
@@ -107,13 +107,15 @@
       </div>
     </footer>
 
-    <script src="scripts/jquery.js"></script>
+    <script src="vendor/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script src="scripts/source_data.json"></script>
-    <script src="scripts/app.js"></script>
-    <script>
-      app.Project.fetchAll();
-    </script>
+    <script src="./data/source_data.json"></script>
+    <script src="./scripts/model/project.js"></script>
+    <script src="./scripts/view/projectView.js"></script>
+    <script src="./vendor/page.js"></script>
+    <script src="./scripts/controller/aboutController.js"></script>
+    <script src="./scripts/controller/projectController.js"></script>
+    <script src="./scripts/controller/routes.js"></script>
   </body>
 
 </html>

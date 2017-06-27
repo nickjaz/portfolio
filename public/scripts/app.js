@@ -54,7 +54,6 @@ let app = {};
     Project.all.map((project) => project.collabs.split(', ')).reduce((count, collabs) => {
       return count.includes(collabs) ? null : count.push(collabs);
     }, []);
-
   };
 
   var initPage = function() {

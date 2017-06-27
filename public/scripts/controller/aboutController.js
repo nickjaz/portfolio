@@ -1,6 +1,6 @@
 'use strict';
 
-let app = app || {};
+var app = app || {};
 
 (function(module) {
   const aboutController = {};
@@ -11,4 +11,4 @@ let app = app || {};
   };
 
   module.aboutController = aboutController;
-});
+})(app);

@@ -1,9 +1,9 @@
 'use strict';
 
-let app = app || {}
+var app = app || {}
 
 (function (module) {
-  
+
   let projectView = {};
 
   projectView.initPage = function() {
@@ -39,5 +39,6 @@ let app = app || {}
     });
   };
 
+  app.Project.fetchAll(projectView.initPage);
   module.projectView = projectView;
 })(app);

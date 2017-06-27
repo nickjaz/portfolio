@@ -2,7 +2,7 @@
 
 var app = app || {}
 
-(function (module) {
+(function(module) {
 
   let projectView = {};
 
@@ -41,4 +41,4 @@ var app = app || {}
 
   app.Project.fetchAll(projectView.initPage);
   module.projectView = projectView;
-})(app);
+}(app));

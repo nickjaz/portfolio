@@ -34,16 +34,16 @@ var app = app || {};
     });
   };
 
-  Project.fetchAll = callback => {
+  Project.fetchAll = function(callback)  {
     if(localStorage.projData) {
       Project.loadAll(JSON.parse(localStorage.projData));
-      callback;
+      callback();
     } else {
-      $.getJSON('/data/source_data.json')
+      $.getJSON('./data/source_data.json')
       .then(function(data){
         localStorage.projData = JSON.stringify(data);
         Project.loadAll(data);
-        callback;
+        callback();
       }, function(err){
         console.error('My page broke because:', err);
       });

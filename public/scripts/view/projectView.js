@@ -1,6 +1,6 @@
 'use strict';
 
-var app = app || {}
+var app = app || {};
 
 (function(module) {
 
@@ -36,6 +36,5 @@ var app = app || {}
     });
   };
 
-  app.Project.fetchAll(projectView.initPage);
   module.projectView = projectView;
 })(app);

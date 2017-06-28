@@ -10,5 +10,6 @@ var app = app || {};
     $('#repo').show();
   };
 
+  app.repos.requestRepos(app.repoView.index);
   module.repoController = repoController;
 })(app);

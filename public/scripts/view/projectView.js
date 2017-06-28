@@ -4,7 +4,7 @@ var app = app || {}
 
 (function(module) {
 
-  let projectView = {};
+  const projectView = {};
 
   projectView.initPage = function() {
     app.Project.all.forEach(function(project) {
@@ -18,9 +18,6 @@ var app = app || {}
   projectView.navHandler = function() {
     $('#menu').on('click', 'li.tab', function(e) {
       e.preventDefault();
-      $('.tab_content').hide();
-      var $tab = $(this).data('content');
-      $('#' + $tab).show();
       $('#menu').removeClass('menu_show').addClass('menu_hide');
       $('.icon-menu').show();
       $('.icon-cross').hide();

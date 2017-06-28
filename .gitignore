@@ -110,4 +110,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#auto-generated tag files
+tags
+githubToken.js
+
 # End of https://www.gitignore.io/api/node,macos,windows

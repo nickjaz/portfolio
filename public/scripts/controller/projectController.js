@@ -6,7 +6,7 @@ var app = app || {};
   const projectController = {};
 
   projectController.index = () => {
-    $('main > section').hide();
+    $('.tab_content').hide();
     $('#project').show();
   };
 

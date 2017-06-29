@@ -17,8 +17,7 @@ var app = app || {};
 
   //event handlers
   projectView.navHandler = function() {
-    $('#menu').on('click', 'li.tab', function(e) {
-      e.preventDefault();
+    $('#menu').on('click', function() {
       $('#menu').removeClass('menu_show').addClass('menu_hide');
       $('.icon-menu').show();
       $('.icon-cross').hide();
@@ -52,6 +51,6 @@ var app = app || {};
       });
     });
   };
-  
+
   module.projectView = projectView;
 })(app);

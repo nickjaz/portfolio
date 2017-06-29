@@ -8,8 +8,8 @@ var app = app || {};
   repoController.index = () => {
     $('.tab_content').hide();
     $('#repo').show();
+    app.repos.requestRepos(app.repoView.index);
   };
-
-  app.repos.requestRepos(app.repoView.index);
+  
   module.repoController = repoController;
 })(app);

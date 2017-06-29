@@ -8,14 +8,9 @@ var app = app || {};
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url: 'https://api.github.com/user/repos',
-      header: githubToken,
-      method: 'GET'
-    }).then(function(data){
-      repos.all.push(data);
-      callback();
-    });
+    $.get('/github.com/user/repos')
+    .then(data => repos.all = data, err => console.log(err))
+    .then(callback);
   };
 
   module.repos = repos;

@@ -1,6 +1,6 @@
 'use strict';
 
-var app = app || {}
+var app = app || {};
 
 (function(module) {
 
@@ -11,6 +11,7 @@ var app = app || {}
       $('#project').append(project.toHtml());
     });
     projectView.navHandler();
+    projectView.menuHandler();
     projectView.bannerHandler();
   };
 
@@ -18,6 +19,22 @@ var app = app || {}
   projectView.navHandler = function() {
     $('#menu').on('click', 'li.tab', function(e) {
       e.preventDefault();
+      $('#menu').removeClass('menu_show').addClass('menu_hide');
+      $('.icon-menu').show();
+      $('.icon-cross').hide();
+    });
+  };
+
+  projectView.menuHandler = function() {
+    $('.icon-cross').hide();
+
+    $('.icon-menu').on('click', function() {
+      $('#menu').removeClass('menu_hide').addClass('menu_show');
+      $('.icon-menu').hide();
+      $('.icon-cross').show();
+    });
+
+    $('.icon-cross').on('click', function() {
       $('#menu').removeClass('menu_show').addClass('menu_hide');
       $('.icon-menu').show();
       $('.icon-cross').hide();
@@ -35,7 +52,6 @@ var app = app || {}
       });
     });
   };
-
-  app.Project.fetchAll(projectView.initPage);
+  
   module.projectView = projectView;
 })(app);

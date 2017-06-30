@@ -162,7 +162,8 @@
 #repo ul li {
   margin-top: 1vw;
   margin-left: 1vw;
-  background: #ccc;
+  width: 50%;
+  background: rgba(0, 0, 0, .75);
   color: #fff;
   padding: 1vw;
 }

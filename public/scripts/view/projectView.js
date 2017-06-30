@@ -6,9 +6,9 @@ var app = app || {};
 
   const projectView = {};
 
-  projectView.initPage = function() {
-    app.Project.all.forEach(function(project) {
-      $('#project').append(project.toHtml());
+  projectView.initPage = function(projects) {
+    projects.forEach(function(p) {
+      $('#project').append(p.toHtml());
     });
     projectView.navHandler();
     projectView.menuHandler();

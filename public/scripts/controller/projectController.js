@@ -5,10 +5,16 @@ var app = app || {};
 (function(module) {
   const projectController = {};
 
-  projectController.index = () => {
-    app.Project.fetchAll(app.projectView.initPage);
+  projectController.index = (ctx, next) => {
+    app.projectView.initPage();
     $('.tab_content').hide();
     $('#project').show();
+  };
+
+  projectController.loadData = (ctx, next) => {
+    let attachProjects = () => ctx.projects = app.Project.all;
+    app.Project.fetchAll(attachProjects);
+    next();
   };
 
   projectController.goHome = () => {

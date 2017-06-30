@@ -12,6 +12,10 @@ header {
   background: #444;
 }
 
+body {
+  height: 100%;
+}
+
 h1 {
   margin-left: 4vw;
   margin-top: 5vw;
@@ -46,7 +50,7 @@ h4 {
 }
 
 footer{
-  margin-top: 4vw;
+  margin-top: -4vw;
   height: 4vw;
   padding: 2vw;
   background: #444;

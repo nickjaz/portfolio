@@ -6,7 +6,7 @@ var app = app || {};
   const projectController = {};
 
   projectController.index = (ctx, next) => {
-    app.projectView.initPage();
+    app.projectView.initPage(ctx.projects);
     $('.tab_content').hide();
     $('#project').show();
   };

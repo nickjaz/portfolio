@@ -158,3 +158,11 @@
   background: rgba(17, 17, 17, .5);
   border-radius: 1%;
 }
+
+#repo ul li {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  background: #ccc;
+  color: #fff;
+  padding: 1vw;
+}

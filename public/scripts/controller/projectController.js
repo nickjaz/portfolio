@@ -11,5 +11,10 @@ var app = app || {};
     $('#project').show();
   };
 
+  projectController.goHome = () => {
+    $('.tab_content').hide();
+    $('#project').show();
+  };
+
   module.projectController = projectController;
 })(app);

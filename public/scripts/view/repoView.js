@@ -17,9 +17,7 @@ var app = app || {};
   repoView.index = function() {
     ui();
 
-    $('#repo ul').append(
-      app.repo.with('name').map(render)
-    );
+    $('#repo ul').append(app.repos.all.map(render));
   };
 
   module.repoView = repoView;

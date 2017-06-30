@@ -8,7 +8,7 @@ var app = app || {};
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    $.get('/github.com/user/repos')
+    $.get('/github/user/repos')
     .then(data => repos.all = data, err => console.log(err))
     .then(callback);
   };

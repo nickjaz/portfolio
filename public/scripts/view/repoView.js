@@ -9,7 +9,6 @@ var app = app || {};
     let $repo = $('#repo');
 
     $repo.find('ul').empty();
-    $repo.show().siblings().hide();
   };
 
   var render = Handlebars.compile($('#repo_template').html());

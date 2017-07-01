@@ -1,6 +1,12 @@
+html, body {
+height: 100%;
+}
+
 body {
   font-family: 'NTR';
-  background: url('/assets/images/colors.jpg') no-repeat center fixed;
+  background: url('/assets/images/colors.jpg') center fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 .clearfix {
@@ -10,10 +16,6 @@ body {
 header {
   height: 10vw;
   background: #444;
-}
-
-body {
-  height: 100%;
 }
 
 h1 {
@@ -46,13 +48,12 @@ h3 {
 }
 
 h4 {
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 footer{
-  margin-top: -4vw;
-  height: 4vw;
-  padding: 2vw;
+  height: 6vw;
+  padding: 3vw;
   background: #444;
   color: #fff;
 }

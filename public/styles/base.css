@@ -1,12 +1,6 @@
-html, body {
-height: 100%;
-}
-
 body {
   font-family: 'NTR';
   background: url('/assets/images/colors.jpg') center fixed;
-  display: flex;
-  flex-direction: column;
 }
 
 .clearfix {

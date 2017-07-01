@@ -38,6 +38,10 @@
   background: url('/assets/images/colors.jpg') center;
 }
 
+.spacer:last-of-type {
+  margin-bottom: 6vw;
+}
+
 .hero_slider {
   margin-top: 8vw;
   position: relative;
@@ -45,6 +49,8 @@
 
 .hero_image img{
   width: 100%;
+  border-top: solid 1vw #444;
+  border-bottom: solid 1vw #444;
 }
 
 .hero_label {
@@ -65,6 +71,7 @@
 
 .tab_content {
   box-sizing: border-box;
+  flex: 1 0 auto;
 }
 
 #project {

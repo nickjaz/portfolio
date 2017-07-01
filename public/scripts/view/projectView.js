@@ -19,24 +19,22 @@ var app = app || {};
   projectView.navHandler = function() {
     $('#menu').on('click', function() {
       $('#menu').removeClass('menu_show').addClass('menu_hide');
-      $('.icon-menu').show();
-      $('.icon-cross').hide();
+      if ($(window).width() < 640) {
+        console.log('window width: ', $(window).width());
+        $('.icon-menu').show();
+      } else {
+        $('.icon-menu').hide();
+      }
     });
   };
 
   projectView.menuHandler = function() {
-    $('.icon-cross').hide();
+    var $menu = $('#menu');
+    var $hamburger = $('.icon-menu');
 
-    $('.icon-menu').on('click', function() {
-      $('#menu').removeClass('menu_hide').addClass('menu_show');
-      $('.icon-menu').hide();
-      $('.icon-cross').show();
-    });
-
-    $('.icon-cross').on('click', function() {
-      $('#menu').removeClass('menu_show').addClass('menu_hide');
-      $('.icon-menu').show();
-      $('.icon-cross').hide();
+    $hamburger.on('click', function() {
+      $menu.removeClass('menu_hide').addClass('menu_show');
+      $hamburger.hide();
     });
   };
 
